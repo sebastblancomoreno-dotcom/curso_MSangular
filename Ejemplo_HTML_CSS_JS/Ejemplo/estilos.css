@@ -1,0 +1,33 @@
+ body{
+	 margin: 0;
+ }
+ #contenedor{
+	 background-color: orange;
+	 height: 433px;
+ }
+ #contenedorMiniaturas
+ {
+	text-align: center;
+ }
+ #visor{
+	 background-color: black;
+	 height: 400px;
+ }
+ .enLinea{
+	display: inline-block;
+ }
+ #foto1{
+	 width: 100px;
+	 height: 33px;
+	 background-color: yellow;
+	 background-image: url('foto1_sm.jpg');
+	 
+	 margin-right: 20px;
+ }
+ #foto2{
+	 width: 100px;
+	 height: 33px;
+	 background-color: red;
+	 background-image: url('foto2_sm.jpg');
+ }
+ 
