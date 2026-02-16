@@ -24,18 +24,18 @@ public class Inicio
 		String sql;
 		int cantidad;
 		
-		/*
+		
 		// Insertamos un registro en la tabla Producto
 		// -------------------------------------------
-		sql = "INSERT INTO PRODUCTO(IDPRODUCTO, NOMBRE, PRECIO, STOCK) "
-			+ "VALUES(?, ?, ?, ?)";
+		sql = "INSERT INTO PRODUCTO(NOMBRE, PRECIO, STOCK) "
+			+ "VALUES( ?, ?, ?)";
 		
 		ps = conexion.prepareStatement(sql);
 		
-		ps.setInt(1, 2);
-		ps.setString(2, "RATON");
-		ps.setFloat(3, 9.99F);
-		ps.setInt(4, 100);
+	
+		ps.setString(1, "RATON");
+		ps.setFloat(2, 9.99F);
+		ps.setInt(3, 100);
 		
 		cantidad = ps.executeUpdate();
 		System.out.println("Insertado " + cantidad + " registro");
@@ -44,26 +44,26 @@ public class Inicio
 
 		// conexion.close();
 		
-		*/
+		
 
 		
 		// Editamos el registro
 		// --------------------
-		sql = "UPDATE PRODUCTO "
-			+ "SET IDPRODUCTO = ?, NOMBRE = ?, PRECIO = ?, STOCK = ? "
-			+ "WHERE IDPRODUCTO = ?";
-		ps = conexion.prepareStatement(sql);
-		
-		ps.setInt(1, 1);
-		ps.setString(2, "RATON NEW");
-		ps.setFloat(3, 99.99F);
-		ps.setInt(4, 1000);
-		ps.setInt(5, 1);
-		
-		cantidad = ps.executeUpdate();
-		
-		System.out.println("Editado " + cantidad + " registro");
-		ps.close();
+//		sql = "UPDATE PRODUCTO "
+//			+ "SET IDPRODUCTO = ?, NOMBRE = ?, PRECIO = ?, STOCK = ? "
+//			+ "WHERE IDPRODUCTO = ?";
+//		ps = conexion.prepareStatement(sql);
+//		
+//		ps.setInt(1, 1);
+//		ps.setString(2, "RATON NEW");
+//		ps.setFloat(3, 99.99F);
+//		ps.setInt(4, 1000);
+//		ps.setInt(5, 1);
+//		
+//		cantidad = ps.executeUpdate();
+//		
+//		System.out.println("Editado " + cantidad + " registro");
+//		ps.close();
 		
 		
 		
